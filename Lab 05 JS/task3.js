@@ -1,10 +1,5 @@
-const add = (a, b) => {
-  return a - b;
+function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num);
 }
 
-
-
-var myAnonymousFunction = function(x, y) {
-  return x + y;
-};
-console.log(add(4,8));
+console.log(sum(4,2));
