@@ -32,4 +32,3 @@ const calculateGrade = (marks) => {
   console.log(`Sum of marks: ${result.sum}`);
   console.log(`Average: ${result.average}`);
   console.log(`Grade: ${result.grade}`);
-  
