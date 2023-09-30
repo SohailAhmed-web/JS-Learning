@@ -1,21 +1,9 @@
-function checkDrive(speed){
-  const speedLimit = 70;
-  const penaltyPer5KM = 1;
-  const maxPenaltyPoints = 10;
+function calcGrade = (marks) => {
+  const sum = marks.reduce((total, mark) => total + mark, 0);
+  const average = sum / marks.length;
 
-  if(speed <= speedLimit){
-    console.log("Good Safe Driving");
-  } else {
-    const points = Math.floor((speed - speedLimit) / 5);
-    if(points <= maxPenaltyPoints) {
-      console.log("speed limit crossed by penalty point: ${points}");
-    } else {
-      console.log("License suspended");
-    }
-  }
-}
+  let grade = ``;
 
-
-checkDrive(125);
-checkDrive(65);
-checkDrive(72);
+  if(average >= 90){
+    grade = 'A+';
+  } else if()
